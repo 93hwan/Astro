@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/homefragment_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/set_border_bottom"
+        android:weightSum="3">
+
+        <!--앱 이름-->
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/homefragment_app"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3"
+            android:gravity="center_vertical"
+            android:text="ASTRO"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <!--채팅-->
+        <ImageView
+            android:id="@+id/homefragment_msg"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:padding="6dp"
+            android:src="@drawable/icon_msg" />
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/homefragment_top"
+        android:id="@+id/homefragment_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/homefragment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/homefragment_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/set_progress_circle"
+        android:visibility="invisible" />
+</RelativeLayout>

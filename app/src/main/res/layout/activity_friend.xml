@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".chat.FriendActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/set_border_bottom"
+        >
+        <ImageView
+            android:id="@+id/friendactivity_back"
+            android:padding="4dp"
+            android:src="@drawable/icon_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/friend_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/edit_post_imageview"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/icon_picture" />
+
+    <EditText
+        android:id="@+id/edit_post_tag"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/set_btn_background"
+        android:gravity="top"
+        android:hint="Tag ( ex : #keyword ) "
+        android:lines="1"
+        android:padding="5dp"
+        android:textColor="#868686"
+        />
+
+    <EditText
+        android:id="@+id/edit_post_content"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/set_btn_background"
+        android:gravity="start"
+        android:hint="Content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:padding="5dp"
+        android:textColor="#868686"
+        />
+
+    <Button
+        android:id="@+id/edit_post_edit"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/set_btn_background"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="#a100ff" />
+</LinearLayout>

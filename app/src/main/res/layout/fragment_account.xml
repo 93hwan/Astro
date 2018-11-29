@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/user_page_top"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/set_border_bottom"
+        >
+
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:id="@+id/accountfragment_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:src="@drawable/icon_back"
+            />
+        <TextView
+            android:id="@+id/accountfragment_username"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/accountfragment_back"
+            android:text="User"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/accountfragment_setting"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:src="@drawable/icon_setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_userinfo"
+        android:layout_below="@+id/user_page_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/set_border_bottom"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/accountfragment_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_profile" />
+
+        <TextView
+            android:id="@+id/accountfragment_post_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountfragment_post_count"
+            android:layout_centerHorizontal="true"
+            android:text="post"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/accountfragment_friend_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="100dp"
+            android:text="0"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/accountfragment_post_count"
+            android:layout_marginEnd="87dp"
+            android:text="friend"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/accountfragment_editbutton"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/accountfragment_profile"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/set_btn_background"
+            android:text="edit profile"
+            android:textColor="#a100ff"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/accountfragment_bio"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountfragment_profile"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_below="@+id/account_userinfo"
+        android:id="@+id/accountfragment_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/accountfragment_recylcerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/accountfragment_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/set_progress_circle"/>
+</RelativeLayout>
