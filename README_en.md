@@ -1,5 +1,5 @@
 # Astro
-## 개요
+## Intro
 > ### A social media application created using basic necessary knowledge for developing application
 ## Period
 > ### 2018.10.10 ~
@@ -9,7 +9,7 @@
 ***
 
 # The composition of the application
-![default](https://user-images.githubusercontent.com/31762036/49153486-34e71b00-f359-11e8-9efe-b9486e137f79.jpg)
+![main_en](https://user-images.githubusercontent.com/31762036/49375420-93d8d580-f747-11e8-85ca-54ae94ccc3b6.jpg)
 
 <br /><br />
 
