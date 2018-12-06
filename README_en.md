@@ -22,7 +22,7 @@
 > ### It shows 5 posts, when 5th post is on the view it calls progress bar and brings 5 posts 
 > ### from Firebase Database on the basis of the time of 5th post on the view to show users.
 ## 2.
-> ### When you clicked the speech bubble you can check coments of the post
+> ### When you click the speech bubble you can check coments of the post
 <br /><br />
 - ### Message
 ![jpg](https://user-images.githubusercontent.com/31762036/49153610-960eee80-f359-11e8-93f7-6caa6fcf0b9d.jpg)
@@ -51,7 +51,7 @@
 
 ## 1.
 > ### It shows 12 posts of account when 12th post is on the bottom of the view, 
-> ### It brings data of previous 12 posts and show you.
+> ### It brings data of previous 12 posts and shows you.
 ## 2.
 > ### You are able to edit your account by edit button on your account page.
 <br /><br />
@@ -61,5 +61,5 @@
 > #### I thought the platform of application has basic of knowledge for developing application among platforms would be social media,
 > #### so I started to develop this application to keep practicing the basic knowledge.
 > #### Whenever i encounter with error or something i wanted to develop, i was able to get that by searhing Youtube or Stackover Flow.
-> #### I was able to improve concepts of developing application more than, 
+> #### I was able to improve concepts of developing application more than
 > #### when i develop with books or tutorials during developing this application. 
